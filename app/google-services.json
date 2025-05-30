@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "197733364063",
+    "project_id": "agendafinanciera-2eede",
+    "storage_bucket": "agendafinanciera-2eede.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197733364063:android:9ad22d792580edd65006ea",
+        "android_client_info": {
+          "package_name": "com.texdevs.agendafinanciera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCabDKvIc32fSxgE3j8p0pSfnvPYtCjAU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
