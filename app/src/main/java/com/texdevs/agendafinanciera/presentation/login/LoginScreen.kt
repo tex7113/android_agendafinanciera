@@ -36,7 +36,7 @@ import com.texdevs.agendafinanciera.ui.theme.UnselectedField
 import com.texdevs.agendafinanciera.ui.theme.Yellow
 
 @Composable
-fun LoginScreen(auth: FirebaseAuth) {
+fun LoginScreen(auth: FirebaseAuth, navigateToHome:() -> Unit) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     Column(
@@ -85,6 +85,7 @@ fun LoginScreen(auth: FirebaseAuth) {
             auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                 if (it.isSuccessful){
                     //navigate
+                    navigateToHome()
                     Log.i("tex", "Login OK")
                 }else{
                     Log.i("tex", "Login KO")
